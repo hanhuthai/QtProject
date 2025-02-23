@@ -7,6 +7,7 @@ Window {
     visible: true
     title: qsTr("Hello World")
     property string txt: "nerver give up"
+    property double count: 3.1456
 
     Row{
         id: row1
@@ -45,5 +46,8 @@ Window {
             }
         }
 
+    }
+    Component.onCompleted: {
+        console.log("IN ra so: ", count? false:true)
     }
 }
